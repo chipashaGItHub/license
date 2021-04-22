@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>License</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/css/core.css" rel="stylesheet" type="text/css">
+	<link href="/css/components.css" rel="stylesheet" type="text/css">
+	<link href="/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="/js/core/app.js"></script>
+
+	<script type="text/javascript" src="/js/plugins/ui/ripple.min.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body class="navbar-bottom">
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="breadcrumb-line">
+			<ul class="breadcrumb">
+				<li><a href="<%= Routes.authentication_path(@conn, :index) %>"><i class="icon-home2 position-left"></i> login</a></li>
+				<li><a href="wizards_steps.html">Waste License</a></li>
+				<li class="active">Register</li>
+			</ul>
+
+			<ul class="breadcrumb-elements">
+				<li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-gear position-left"></i>
+						Settings
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+						<li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+						<li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="page-header-content">
+			<div class="page-title">
+				<h4><a href="<%= Routes.register_path(@conn, :phase_2) %>"><i class="icon-arrow-left52 position-left"></i> </a> </h4>
+			</div>
+
+			<div class="heading-elements">
+				<div class="heading-btn-group">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /page header -->
+
+    <!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+			     <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="thumbnail no-padding">
+                           <a href="<%= Routes.register_path(@conn, :phase_2) %>">
+                            <div class="caption text-center">
+                                <h6 class="text-semibold no-margin">WASTE<small class="display-block">SEO specialist</small></h6>
+                                <ul class="icons-list mt-15">
+                                   <button type="submit" class="btn bg-blue btn-block">Register here!<i class="icon-arrow-right14 position-right"></i></button>
+                                </ul>
+                            </div>
+                            <div class="thumb">
+                                <img src="/images/waste.jpeg" alt="" style="height: 450px; width: 450px;">
+                                <div class="caption-overflow">
+                                    <span>
+                                        <a href="assets/images/placeholder.jpg" class="btn bg-success-400 btn-icon btn-xs" data-popup="lightbox"><i class="icon-plus2"></i></a>
+                                        <a href="user_pages_profile.html" class="btn bg-success-400 btn-icon btn-xs"><i class="icon-link"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="thumbnail no-padding">
+                            <div class="caption text-center">
+                                <h6 class="text-semibold no-margin">MILK AND MILK PRODUCT <small class="display-block">SEO specialist</small></h6>
+                                <ul class="icons-list mt-15">
+                                   <button type="submit" class="btn bg-blue btn-block">Register here! <i class="icon-arrow-right14 position-right"></i></button>
+                                </ul>
+                            </div>
+                            <div class="thumb">
+                                <img src="/images/milk.jpeg" alt="" style="height: 450px; width: 450px;">
+                                <div class="caption-overflow">
+                                    <span>
+                                        <a href="assets/images/placeholder.jpg" class="btn bg-success-400 btn-icon btn-xs" data-popup="lightbox"><i class="icon-plus2"></i></a>
+                                        <a href="user_pages_profile.html" class="btn bg-success-400 btn-icon btn-xs"><i class="icon-link"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="thumbnail no-padding">
+                            <div class="caption text-center">
+                                <h6 class="text-semibold no-margin">MEAT AND MEAT PRODUCT <small class="display-block">SEO specialist</small></h6>
+                                <ul class="icons-list mt-15">
+                                    <button type="submit" class="btn bg-blue btn-block">Register here! <i class="icon-arrow-right14 position-right"></i></button>
+                                </ul>
+                            </div>
+                            <div class="thumb">
+                                <img src="/images/meat.jpeg" alt="" style="height: 450px; width: 450px;">
+                                <div class="caption-overflow">
+                                    <span>
+                                        <a href="assets/images/placeholder.jpg" class="btn bg-success-400 btn-icon btn-xs" data-popup="lightbox"><i class="icon-plus2"></i></a>
+                                        <a href="user_pages_profile.html" class="btn bg-success-400 btn-icon btn-xs"><i class="icon-link"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="thumbnail no-padding">
+                            <div class="caption text-center">
+                                <h6 class="text-semibold no-margin">OTHERS <small class="display-block">SEO specialist</small></h6>
+                                <ul class="icons-list mt-15">
+                                        <button type="submit" class="btn bg-blue btn-block">Register here! <i class="icon-arrow-right14 position-right"></i></button>
+                                </ul>
+                            </div>
+                            <div class="thumb">
+                                <img src="/images/others.jpeg" alt="" style="height: 450px; width: 450px;">
+                                <div class="caption-overflow">
+                                    <span>
+                                        <a href="assets/images/placeholder.jpg" class="btn bg-success-400 btn-icon btn-xs" data-popup="lightbox"><i class="icon-plus2"></i></a>
+                                        <a href="user_pages_profile.html" class="btn bg-success-400 btn-icon btn-xs"><i class="icon-link"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+				<!-- /error wrapper -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>License</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/css/core.css" rel="stylesheet" type="text/css">
+	<link href="/css/components.css" rel="stylesheet" type="text/css">
+	<link href="/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script type="text/javascript" src="/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script type="text/javascript" src="/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script type="text/javascript" src="/js/core/app.js"></script>
+	<script type="text/javascript" src="/js/pages/dashboard.js"></script>
+    <script type="text/javascript" src="/js/charts/echarts/lines_areas.js"></script>
+
+	<script type="text/javascript" src="/js/plugins/ui/ripple.min.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body class="navbar-bottom">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse bg-indigo">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="/images/placeholder.jpg" alt="">
+						<span>Mike</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+						<li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+						<li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+						<li><a href="<%= Routes.session_path(@conn, :sign_out) %>"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="breadcrumb-line">
+			<ul class="breadcrumb">
+				<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+				<li class="active">Dashboard</li>
+			</ul>
+
+			<ul class="breadcrumb-elements">
+				<li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-gear position-left"></i>
+						Settings
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+						<li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+						<li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="page-header-content">
+			<div class="page-title">
+			</div>
+
+
+		</div>
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main sidebar-default">
+				<div class="sidebar-content">
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="sidebar-user-material">
+							<div class="category-content">
+								<div class="sidebar-user-material-content">
+									<a href="#"><img src="/images/placeholder.jpg" class="img-circle img-responsive" alt=""></a>
+									<h6>Mike</h6>
+									<span class="text-size-small">Super Admin</span>
+								</div>
+
+								<div class="sidebar-user-material-menu">
+									<a href="#user-nav" data-toggle="collapse"><span>My account</span> <i class="caret"></i></a>
+								</div>
+							</div>
+
+							<div class="navigation-wrapper collapse" id="user-nav">
+								<ul class="navigation">
+									<li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+									<li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+									<li><a href="<%= Routes.session_path(@conn, :sign_out) %>"><i class="icon-switch2"></i> Logout</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+								<li>
+									<a href="#"><i class="icon-stack2"></i> <span>Reports</span></a>
+									<ul>
+										<li><a href="layout_navbar_main_fixed.html">view pending reports</a></li>
+										<li><a href="layout_navbar_secondary_fixed.html">Approved reports</a></li>
+										<li><a href="layout_navbar_main_hideable.html">All reports</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="icon-copy"></i> <span>Layouts</span></a>
+									<ul>
+										<li><a href="../../../layout_1/LTR/index.html" id="layout1">Layout 1</a></li>
+										<li><a href="../../../layout_2/LTR/index.html" id="layout2">Layout 2</a></li>
+										<li><a href="index.html" id="layout3">Layout 3 <span class="label bg-warning-400">Current</span></a></li>
+										<li><a href="../../../layout_4/LTR/index.html" id="layout4">Layout 4</a></li>
+										<li><a href="../../../layout_5/LTR/index.html" id="layout5">Layout 5</a></li>
+										<li class="disabled"><a href="../../../layout_6/LTR/index.html" id="layout6">Layout 6 <span class="label label-transparent">Coming soon</span></a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="icon-droplet2"></i> <span>Color system</span></a>
+									<ul>
+										<li><a href="colors_primary.html">Primary palette</a></li>
+										<li><a href="colors_danger.html">Danger palette</a></li>
+										<li><a href="colors_success.html">Success palette</a></li>
+										<li><a href="colors_warning.html">Warning palette</a></li>
+										<li><a href="colors_info.html">Info palette</a></li>
+										<li class="navigation-divider"></li>
+										<li><a href="colors_pink.html">Pink palette</a></li>
+										<li><a href="colors_violet.html">Violet palette</a></li>
+										<li><a href="colors_purple.html">Purple palette</a></li>
+										<li><a href="colors_indigo.html">Indigo palette</a></li>
+										<li><a href="colors_blue.html">Blue palette</a></li>
+										<li><a href="colors_teal.html">Teal palette</a></li>
+										<li><a href="colors_green.html">Green palette</a></li>
+										<li><a href="colors_orange.html">Orange palette</a></li>
+										<li><a href="colors_brown.html">Brown palette</a></li>
+										<li><a href="colors_grey.html">Grey palette</a></li>
+										<li><a href="colors_slate.html">Slate palette</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="icon-stack"></i> <span>Starter kit</span></a>
+									<ul>
+										<li><a href="starters/horizontal_nav.html">Horizontal navigation</a></li>
+										<li><a href="starters/1_col.html">1 column</a></li>
+										<li><a href="starters/2_col.html">2 columns</a></li>
+										<li>
+											<a href="#">3 columns</a>
+											<ul>
+												<li><a href="starters/3_col_dual.html">Dual sidebars</a></li>
+												<li><a href="starters/3_col_double.html">Double sidebars</a></li>
+											</ul>
+										</li>
+										<li><a href="starters/4_col.html">4 columns</a></li>
+										<li><a href="starters/layout_boxed.html">Boxed layout</a></li>
+										<li class="navigation-divider"></li>
+										<li><a href="starters/layout_navbar_fixed_main.html">Fixed main navbar</a></li>
+										<li><a href="starters/layout_navbar_fixed_secondary.html">Fixed secondary navbar</a></li>
+										<li><a href="starters/layout_navbar_fixed_both.html">Both navbars fixed</a></li>
+										<li><a href="starters/layout_sidebar_sticky.html">Sticky sidebar</a></li>
+									</ul>
+								</li>
+								<li><a href="changelog.html"><i class="icon-list-unordered"></i> <span>Changelog <span class="label bg-blue-400">1.4</span></span></a></li>
+								<li><a href="../../RTL/index.html"><i class="icon-width"></i> <span>RTL version</span></a></li>
+								<!-- /main -->
+
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+			    <%= @inner_content %>
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+	<!-- Footer -->
+	<div class="navbar navbar-default navbar-fixed-bottom footer">
+		<ul class="nav navbar-nav visible-xs-block">
+			<li><a class="text-center collapsed" data-toggle="collapse" data-target="#footer"><i class="icon-circle-up2"></i></a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse" id="footer">
+			<div class="navbar-text">
+				&copy; 2021. <a href="#" class="navbar-link">License Aggregation system developed</a> by <a href="http://themeforest.net/user/Kopyov" class="navbar-link" target="_blank">Mike</a>
+			</div>
+
+			<div class="navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /footer -->
+
+</body>
+</html>
